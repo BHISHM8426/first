@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculater</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="calculater">
+
+            <form>
+                <div class="all">
+                    <div class="display">
+                        <input type="text" id="display">
+                    </div>
+                    <div class="one">
+                        <input type="button" value="AC" style="color: green;" onclick="clearinput()">
+                        <input type="button" value="DE" style="color: red;" onclick="display.value = display.value.toString().slice(0,-1)">
+                        <input type="button" value="." onclick="appendinput('.')">
+                        <input type="button" value="/" onclick="appendinput('/')"> </div>
+
+                    <div class="two">
+                        <input type="button" value="7" onclick="appendinput('7')">
+                        <input type="button" value="8" onclick="appendinput('8')">
+                        <input type="button" value="9" onclick="appendinput('9')">
+                        <input type="button" value="*" onclick="appendinput('*')">
+                    </div>
+
+                    <div class="three">
+                        <input type="button" value="4" onclick="appendinput('4')">
+                        <input type="button" value="5" onclick="appendinput('5')">
+                        <input type="button" value="6" onclick="appendinput('6')">
+                        <input type="button" value="-" onclick="appendinput('-')">
+                    </div>
+
+                    <div class="four">
+                        <input type="button" value="1" onclick="appendinput('1')">
+                        <input type="button" value="2" onclick="appendinput('2')">
+                        <input type="button" value="3" onclick="appendinput('3')">
+                        <input type="button" value="+" onclick="appendinput('+')">
+                    </div>
+
+                    <div>
+                        <input type="button" value="00" onclick="appendinput('00')">
+
+                        <input type="button" value="0" onclick="appendinput('0')">
+                        <input type="button" value="=" onclick="resultans() ">
+                    </div>
+                </div>
+            </form>
+
+
+        </div>
+    </div>
+
+    <script src="per.js"></script>
+
+</body>
+
+
+
+</html>
